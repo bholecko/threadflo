@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <threadflo translate="label">
+            <label>Threadflo</label>
+            <sort_order>100</sort_order>
+        </threadflo>
+    </tabs>
+    <sections>
+        <threadflo_general translate="label" module="threadflo">
+            <class>separator-top</class>
+            <label>General</label>
+            <tab>threadflo</tab>
+            <sort_order>0</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <account translate="label">
+                    <label>Account</label>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <api_enabled>
+                            <label>API Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </api_enabled>
+                        <api_key>
+                            <label>API Key</label>
+                            <frontend_type>password</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </api_key>
+                    </fields>
+                </account>
+                <services>
+                    <label>Services</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <shipping_tracking_enabled>
+                            <label>Auto-Shipping/Tracking Enabled</label>
+                            <comment>Hourly updates.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </shipping_tracking_enabled>
+                    </fields>
+                </services>
+            </groups>
+        </threadflo_general>
+    </sections>
+</config>

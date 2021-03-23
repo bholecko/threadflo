@@ -1,0 +1,14 @@
+--- Installation Instructions ---
+1) Create and review your products in the Threadflo admin prior to installation.
+2) Review laws related to collecting taxes and shipping/handling fees. By default, imported products use a tax class of Taxable Goods and your existing tax/shipping configuration. Be sure to configure your Magento system to match these laws.
+2) Ensure [MAGENTO_BASE_DIR]/cron.php is running at least every 15 minutes by running crontab -l on the command line.
+3) Copy contents of app folder to [MAGENTO_BASE_DIR]/app/.
+4) Copy contents of shell folder to [MAGENTO_BASE_DIR]/shell/.
+5) Copy contents of skin folder to [MAGENTO_BASE_DIR]/skin/.
+6) Login to the Magento admin.
+7) Clear cache. Log out and log back in.
+8) Enable system logs in System > Configuration > Developer > Log Settings.
+9) Configure extension in System > Configuration > Threadflo > General.
+10) Clear cache again.
+11) For small catalogs, go to Catalog > Threadflo and press the Sync Designs button to import your Threadflo items. Then, click on the Update Products button to create your product catalog.
+12) For medium to large catalogs, it is strongly advised to run the following functions via command line. Change directory to [MAGENTO_BASE_DIR]/shell/threadflo/. Run sync-designs.php, then update-products.php afterward.

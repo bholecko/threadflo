@@ -1,0 +1,1 @@
+zip threadflo_magento_extension_1.1.4.zip app/ shell/ skin/ *.txt

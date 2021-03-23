@@ -1,0 +1,19 @@
+<div class="content-header">
+    <table>
+        <tr>
+            <td>
+                <h3 class="icon-head head-products"><?php echo $this->__('Threadflo Designs') ?><span id="threadflo-list-item-count"></span></h3>
+            </td>
+            <td class="a-right">
+                <button class="scalable add" onclick="setLocation('<?php echo $this->getUrl('adminhtml/threadflo_items/createProductsPost') ?>')"><span><span><span><?php echo $this->__('Update Products') ?></span></span></span></button>
+                <form id="my_items_import" name="my_items_import" action="<?php echo $this->getUrl('adminhtml/threadflo_items/importPost', array('_secure' => true)) ?>" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="form_key" value="<?php echo $this->getFormKey() ?>" />
+                </form>
+                <script type="text/javascript">
+                    var importForm = new varienForm('my_items_import');
+                </script>
+                <button class="scalable add" onclick="importForm.submit()"><span><span><span><?php echo $this->__('Sync Designs') ?></span></span></span></button>
+            </td>
+        </tr>
+    </table>
+</div>

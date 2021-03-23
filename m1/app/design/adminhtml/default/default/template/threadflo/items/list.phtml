@@ -1,0 +1,35 @@
+<?php $designs = $this->getDesigns(); ?>
+<?php if(count($designs)): ?>
+<script type="text/javascript">
+    document.getElementById('threadflo-list-item-count').innerHTML = ' (<?php echo count($designs) ?>)';
+</script>
+<div class="threadflo-items-list">
+    <ul>
+    <?php foreach ($designs as $design): ?>
+        <?php $color = $design->getColorName(); ?>
+        <?php $size = $design->getSizeName(); ?>
+        <?php $images = $design->getImages(); ?>
+        <?php if(count($images)): ?>
+            <?php foreach ($images as $image): ?>
+                <li>
+                    <div class="threadflo-items-panel">
+                        <div class="threadflo-items-container">
+                            <div class="threadflo-items-img">
+                                <img id="threadflo-item-image-<?php echo $design->getEntityId() ?>" src="<?php echo $image->getUrl() ?>" alt="" />
+                            </div>
+                            <div class="threadflo-items-name">
+                                <?php echo $design->getItemName() ?>: <?php echo $color ?> <?php echo $size ?> <?php echo $image->getName() ?>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    <?php endforeach; ?>
+    </ul>
+</div>
+<?php else: ?>
+    <br />
+    <div class="threadflo-no-items-message"><?php echo $this->__('No designs imported.') ?></div>
+    <br />
+<?php endif; ?>
