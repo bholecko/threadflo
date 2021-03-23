@@ -1,0 +1,22 @@
+<?php $_order = $block->getOrder() ?>
+<section class="admin__page-section order-view-account-information">
+    <div class="admin__page-section-title">
+        <span class="title"><?php echo __('Threadflo Order Information') ?></span>
+    </div>
+    <div class="admin__page-section-content">
+        <div class="admin__page-section-item order-information">
+            <table cellspacing="0" class="admin__table-secondary">
+                <tr>
+                    <td class="label"><label><?php echo __('Order ID') ?></label></td>
+                    <td class="value"><strong><?php echo $_order->getThreadfloOrderId() ? $_order->getThreadfloOrderId() : 'None' ?></strong></td>
+                </tr>
+                <tr>
+                    <td class="label"><label><?php echo __('Status') ?></label></td>
+                    <td class="value"><strong><?php echo $_order->getThreadfloOrderStatus() ? $_order->getThreadfloOrderStatus() : 'None' ?></strong></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+

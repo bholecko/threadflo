@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Peakk_Threadflo::threadflo" title="Threadflo" module="Peakk_Threadflo" sortOrder="100" parent="Magento_Backend::content" resource="Peakk_Threadflo::threadflo" />
+        <add id="Peakk_Threadflo::threadflo_designs" title="Designs" module="Peakk_Threadflo" sortOrder="0" parent="Peakk_Threadflo::threadflo" resource="Peakk_Threadflo::threadflo_designs_listall" action="threadflo/designs/listall" />
+    </menu>
+</config>

@@ -1,0 +1,31 @@
+<?php $items = $block->getItems(); ?>
+<?php if (count($items)): ?>
+<div class="threadflo-items-list">
+    <ul>
+    <?php foreach ($items as $item): ?>
+        <?php $itemImages = $item->getImages(); ?>
+        <?php if (count($itemImages)): ?>
+            <?php foreach ($itemImages as $itemImage): ?>
+                <?php $itemImgUrl = $itemImage->getUrl(); ?>
+                <li>
+                    <div class="threadflo-items-panel">
+                        <div class="threadflo-items-container">
+                            <div class="threadflo-items-img">
+                                <img id="threadflo-item-image-<?php echo $item->getEntityId() ?>" src="<?php echo $itemImg ?>" alt="Threadflo Design Image" />
+                            </div>
+                            <div class="threadflo-items-name">
+                                <?php echo $item->getItemName() ?>: <?php echo $item->getColorName() ?> <?php echo $item->getSizeName() ?> <?php echo $itemImage->getName() ?>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    <?php endforeach; ?>
+    </ul>
+</div>
+<?php else: ?>
+    <br />
+    <div class="threadflo-no-items-message"><?php echo __('No items imported.') ?></div>
+    <br />
+<?php endif; ?>

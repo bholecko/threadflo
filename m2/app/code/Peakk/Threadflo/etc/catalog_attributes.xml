@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Catalog/etc/catalog_attributes.xsd">
+    <group name="catalog_product">
+        <attribute name="threadflo_item_id"/>
+        <attribute name="threadflo_item_sku"/>
+        <attribute name="threadflo_item_size"/>
+        <attribute name="threadflo_item_color"/>
+    </group>
+    <group name="quote_item">
+        <attribute name="threadflo_item_id"/>
+        <attribute name="threadflo_item_sku"/>
+    </group>
+    <group name="sales_item">
+        <attribute name="threadflo_item_id"/>
+        <attribute name="threadflo_item_sku"/>
+    </group>
+</config>

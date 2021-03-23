@@ -1,0 +1,11 @@
+#threadflo-update-products-button { float: right; margin: 0 10px; }
+#threadflo-sync-designs-button { float: right; }
+
+.threadflo-items-list { text-align: center; }
+.threadflo-items-list li { width: 25%; float: left; list-style: none; }
+.threadflo-items-panel { padding: 10px; }
+.threadflo-items-container { border: 1px solid #ccc; background-color: #eee; }
+.threadflo-items-name { text-align: center; font-weight: bold; padding: 10px; }
+.threadflo-items-img { padding: 5px 5px 0 5px; }
+.threadflo-items-img img { width: 100%; }
+.threadflo-no-items-message { text-align: center; }

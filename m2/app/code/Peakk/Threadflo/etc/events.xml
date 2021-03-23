@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_quote_item_set_product">
+        <observer name="threadflo_set_quote_item_data" instance="Peakk\Threadflo\Observer\SalesQuoteItemSetThreadfloData" />
+    </event>
+    <event name="sales_model_service_quote_submit_success">
+        <observer name="threadflo_set_order_item_data" instance="Peakk\Threadflo\Observer\SalesOrderItemSetThreadfloData" />
+        <observer name="threadflo_send_order" instance="Peakk\Threadflo\Observer\SalesOrderSendThreadfloData" />
+    </event>
+</config>

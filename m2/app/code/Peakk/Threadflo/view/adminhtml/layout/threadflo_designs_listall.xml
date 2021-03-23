@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Threadflo Designs</title>
+        <css src="Peakk_Threadflo::css/threadflo.css"/>
+    </head>
+    <body>
+        <referenceContainer name="page.main.actions">
+            <block class="Magento\Backend\Block\Template" name="threadflo.designs.import.button" template="Peakk_Threadflo::designs/import/button.phtml" />
+            <block class="Magento\Backend\Block\Template" name="threadflo.designs.create.products.button" template="Peakk_Threadflo::designs/create/products/button.phtml" />
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Peakk\Threadflo\Block\Adminhtml\Designs\ItemList" name="threadflo.designs.list" />
+        </referenceContainer>
+    </body>
+</page>

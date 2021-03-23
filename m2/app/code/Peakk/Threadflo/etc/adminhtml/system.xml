@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config:etc/system_file.xsd">
+    <system>
+        <tab id="threadflo" translate="label" sortOrder="0">
+            <label>Threadflo</label>
+        </tab>
+        <section id="threadflo_general" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>General</label>
+            <tab>threadflo</tab>
+            <resource>Peakk_Threadflo::config_threadflo</resource>
+            <group id="account" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Account</label>
+                <field id="api_enabled" translate="label" type="select" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>API Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="api_key" translate="label" type="obscure" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>API Key</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
